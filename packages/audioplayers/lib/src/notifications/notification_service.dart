@@ -185,7 +185,7 @@ void _backgroundCallbackDispatcher() {
       } else if (playerState == 'paused') {
         onAudioChangeBackgroundEvent!(PlayerState.paused);
       } else if (playerState == 'completed') {
-        onAudioChangeBackgroundEvent!(PlayerState.completed);
+        onAudioChangeBackgroundEvent!(PlayerState.playing);
       }
     } else {
       assert(false, "No handler defined for method type: '${call.method}'");
